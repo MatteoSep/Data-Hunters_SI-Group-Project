@@ -54,7 +54,7 @@ Variables ending in `E` indicate point estimates, while variables ending in `M` 
 library(tidycensus)
 library(tidyverse)
 
-census_api_key("API_KEY", install=TRUE, overwrite = TRUE)
+census_api_key("API_KEY", install=TRUE)
 ```
 
 # Variables selection and Data retrieval
