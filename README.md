@@ -1,10 +1,11 @@
 # SI-Group-Project
 
-### Data Sources and Variable Construction
+# Overview
+[Aggiungere titolo e overview, una sorta di riassunto]
 
 
-### ACS Variables Documentation
 
+# Data Sources 
 Socioeconomic data were retrieved from the American Community Survey (ACS) using the tidycensus R package. 
 State-level observations correspond to the 2019 ACS 1-year estimates.
 
@@ -45,3 +46,15 @@ Examples:
   * `PE` = percentage estimate
 
 Variables ending in `E` indicate point estimates, while variables ending in `M` indicate margins of error.
+
+
+# Setup
+
+'''
+library(tidycensus)
+library(tidyverse)
+
+census_api_key("API_KEY", install=TRUE, overwrite = TRUE)
+'''
+
+
