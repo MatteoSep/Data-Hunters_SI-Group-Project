@@ -50,11 +50,27 @@ Variables ending in `E` indicate point estimates, while variables ending in `M` 
 
 # Setup
 
-'''
+```r
 library(tidycensus)
 library(tidyverse)
 
 census_api_key("API_KEY", install=TRUE, overwrite = TRUE)
-'''
+```
+
+# Variables selection and Data retrieval
+
+```r
+dati_raw <- get_acs(
+  geography = "state",
+  variables = c(median_income = "B19013_001",
+                poverty_rate   = "DP03_0128PE",
+                insurance_rate = "DP03_0096PE",
+                median_age = "B01002_001E"),
+  year      = anno_studio,
+  survey    = "acs1",
+  output    = "wide",
+)
+```
+
 
 
