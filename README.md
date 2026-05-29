@@ -32,7 +32,7 @@ CDC WONDER mortality data:
 https://wonder.cdc.gov/
 
 
-Additional information related to the variables description can be retrieved in the ACS_variables.md file
+Additional information related to the variables description can be seen [Here](docs/ACS_variables.md) 
 
 
 
