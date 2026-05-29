@@ -6,7 +6,7 @@ Below is a description of all variables used in the analysis.
 
 ---
 
-## Median Household Income (B19013_001)
+## Median Household Income (```B19013_001```)
 
 - **Definition:** Median household income in the past 12 months (inflation-adjusted dollars)
 - **Type:** Detailed table variable (B-series)
@@ -16,7 +16,7 @@ Below is a description of all variables used in the analysis.
 
 ---
 
-## Poverty Rate (DP03_0128PE)
+## Poverty Rate (```DP03_0128PE```)
 
 - **Definition:** Percentage of individuals below the poverty level
 - **Type:** Data Profile variable (DP-series)
@@ -26,7 +26,7 @@ Below is a description of all variables used in the analysis.
 
 ---
 
-## Health Insurance Coverage Rate (DP03_0096PE)
+## Health Insurance Coverage Rate (```DP03_0096PE```)
 
 - **Definition:** Percentage of population with health insurance coverage
 - **Type:** Data Profile variable (DP-series)
@@ -36,7 +36,7 @@ Below is a description of all variables used in the analysis.
 
 ---
 
-## Median Age (B01002_001E)
+## Median Age (```B01002_001E```)
 
 - **Definition:** Median age of the total population (the last letter "E" indicates estimate value)
 - **Type:** Detailed table variable (B-series)
