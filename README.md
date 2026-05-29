@@ -25,6 +25,10 @@ Official ACS variable documentation:
 - Median age (`B01002_001E`)
   https://api.census.gov/data/2019/acs/acs1/variables/B01002_001E.html
 
+
+
+Mortality data were retrieved from the CDC WONDER Multiple Cause of Death database:
+
 CDC WONDER mortality data:
 https://wonder.cdc.gov/
 
