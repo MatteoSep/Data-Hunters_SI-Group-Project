@@ -5,7 +5,7 @@ install.packages("tidyverse")
 library(tidycensus)
 library(tidyverse)
 
-census_api_key("CENSUS_API_KEY", install=TRUE, overwrite = TRUE)
+census_api_key("API_KEY", install=TRUE, overwrite = TRUE)
 readRenviron("~/.Renviron")
 options(timeout = 300) # Imposta il timeout a 5 minuti
 
