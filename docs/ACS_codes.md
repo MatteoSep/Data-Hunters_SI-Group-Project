@@ -1,13 +1,12 @@
-### Notes on ACS Variable Codes
 
 # ACS Variables Documentation
 
-This project uses data from the American Community Survey (ACS) 2019 1-year estimates.  
+This project uses data retrieved from the American Community Survey (ACS) 2019 1-year estimates.  
 Below is a description of all variables used in the analysis.
 
 ---
 
-## B19013_001 — Median Household Income
+## Median Household Income (B19013_001)
 
 - **Definition:** Median household income in the past 12 months (inflation-adjusted dollars)
 - **Type:** Detailed table variable (B-series)
@@ -17,40 +16,46 @@ Below is a description of all variables used in the analysis.
 
 ---
 
-## DP03_0128PE — Poverty Rate
+## Poverty Rate (DP03_0128PE)
 
 - **Definition:** Percentage of individuals below the poverty level
 - **Type:** Data Profile variable (DP-series)
 - **Meaning:** Share of population whose income is below the official poverty threshold
-- **Unit:** Percentage (%)
+- **Unit:** Percentage 
 - **Source section:** Economic Characteristics (DP03)
 
 ---
 
-## DP03_0096PE — Health Insurance Coverage Rate
+## Health Insurance Coverage Rate (DP03_0096PE)
 
 - **Definition:** Percentage of population with health insurance coverage
 - **Type:** Data Profile variable (DP-series)
 - **Meaning:** Measures access to health insurance (public or private)
-- **Unit:** Percentage (%)
+- **Unit:** Percentage 
 - **Source section:** Health Insurance Coverage (DP03)
 
 ---
 
-## B01002_001E — Median Age
+## Median Age (B01002_001E)
 
-- **Definition:** Median age of the total population
+- **Definition:** Median age of the total population (the last letter "E" indicates estimate value)
 - **Type:** Detailed table variable (B-series)
 - **Meaning:** Age that divides the population into two equal halves
 - **Unit:** Years
-- **Note:** "E" indicates estimate value (not margin of error)
 - **Source table:** B01002
 
 ---
 
-# Notes on ACS Variable Naming
 
-- **B-series:** Detailed tables (precise census breakdowns)
-- **DP-series:** Data Profile tables (pre-aggregated indicators)
-- **E suffix:** Estimate value
-- **M suffix:** Margin of error
+## How to read ACS codes
+
+- **First letter** → dataset type (B = detailed, DP = profile)
+  - B-series: detailed tables (precise census breakdowns)
+  - DP-series: data profile tables (pre-aggregated indicators)
+- **Numbers** → thematic table
+- **Numbers after the underscore** → variable index
+  - Lower numbers: basis variable
+  - Higher numbers: more specific variable
+- **Last letter** → data type:
+  - E suffix: Estimate value
+  - M suffix: Margin of error
