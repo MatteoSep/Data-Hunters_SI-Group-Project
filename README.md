@@ -82,7 +82,7 @@ dati_raw <- get_acs(
 
 
 # Disclaimer
-This repository was created for academic purposes as part of the Statistical Inference course project at Sapienza University of Rome.  
+This repository was created for academic purposes as part of the Statistical Inference course project, Università di Roma La Sapienza.  
 All data sources belong to their respective owners, including the U.S. Census Bureau and CDC WONDER.
 
 
