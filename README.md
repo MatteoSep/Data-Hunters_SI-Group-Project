@@ -12,16 +12,18 @@ State-level observations correspond to the 2019 ACS 1-year estimates.
 Official ACS variable documentation:
 
 - Median household income (`B19013_001`)
-  https://api.census.gov/data/2019/acs/acs1/groups/B19013.html
+  https://api.census.gov/data/2019/acs/acs1/variables/B19013_001E.html
+
 
 - Poverty rate (`DP03_0128PE`)
-  https://api.census.gov/data/2019/acs/acs1/profile/groups/DP03.html
+  https://api.census.gov/data/2019/acs/acs1/profile/variables/DP03_0128PE.html
 
 - Health insurance coverage (`DP03_0096PE`)
-  https://api.census.gov/data/2019/acs/acs1/profile/groups/DP03.html
+  https://api.census.gov/data/2019/acs/acs1/profile/variables/DP03_0096PE.html
 
+  
 - Median age (`B01002_001E`)
-  https://api.census.gov/data/2019/acs/acs1/groups/B01002.html
+  https://api.census.gov/data/2019/acs/acs1/variables/B01002_001E.html
 
 CDC WONDER mortality data:
 https://wonder.cdc.gov/
