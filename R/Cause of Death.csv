@@ -1,0 +1,102 @@
+"Notes","State","State Code",Deaths,Population,Crude Rate,Age Adjusted Rate
+,"Alabama","01",54108,4903185,1103.5,897.8
+,"Alaska","02",4613,731545,630.6,700.9
+,"Arizona","04",60236,7278717,827.6,660.5
+,"Arkansas","05",32888,3017804,1089.8,876.1
+,"California","06",269831,39512223,682.9,601.8
+,"Colorado","08",39390,5758736,684.0,647.8
+,"Connecticut","09",31745,3565287,890.4,648.7
+,"Delaware","10",9302,973764,955.3,728.6
+,"District of Columbia","11",4927,705749,698.1,703.2
+,"Florida","12",207002,21477737,963.8,649.4
+,"Georgia","13",85814,10617423,808.2,772.1
+,"Hawaii","15",11559,1415872,816.4,573.3
+,"Idaho","16",14430,1787065,807.5,714.4
+,"Illinois","17",109096,12671821,860.9,704.4
+,"Indiana","18",66001,6732219,980.4,824.6
+,"Iowa","19",30867,3155070,978.3,732.2
+,"Kansas","20",27682,2913314,950.2,765.9
+,"Kentucky","21",48990,4467673,1096.5,911.2
+,"Louisiana","22",45938,4648794,988.2,857.0
+,"Maine","23",15065,1344212,1120.7,759.7
+,"Maryland","24",50800,6045680,840.3,704.7
+,"Massachusetts","25",58630,6892503,850.6,656.1
+,"Michigan","26",99084,9986857,992.1,772.0
+,"Minnesota","27",45514,5639632,807.0,649.2
+,"Mississippi","28",32964,2976149,1107.6,945.1
+,"Missouri","29",62401,6137428,1016.7,801.1
+,"Montana","30",10402,1068778,973.3,739.2
+,"Nebraska","31",16970,1934408,877.3,714.2
+,"Nevada","32",25586,3080156,830.7,740.5
+,"New Hampshire","33",12744,1359711,937.3,700.0
+,"New Jersey","34",75010,8882190,844.5,657.3
+,"New Mexico","35",19512,2096829,930.5,761.8
+,"New York","36",156375,19453561,803.8,616.2
+,"North Carolina","37",95881,10488084,914.2,767.3
+,"North Dakota","38",6702,762062,879.5,709.5
+,"Ohio","39",123717,11689100,1058.4,827.1
+,"Oklahoma","40",40930,3956971,1034.4,880.4
+,"Oregon","41",37370,4217737,886.0,697.6
+,"Pennsylvania","42",133983,12801989,1046.6,750.7
+,"Rhode Island","44",10256,1059361,968.1,709.9
+,"South Carolina","45",50962,5148714,989.8,804.0
+,"South Dakota","46",8270,884659,934.8,739.5
+,"Tennessee","47",71935,6829174,1053.3,882.7
+,"Texas","48",203362,28995881,701.3,717.8
+,"Utah","49",18736,3205958,584.4,686.6
+,"Vermont","50",5956,623989,954.5,680.2
+,"Virginia","51",70325,8535519,823.9,703.3
+,"Washington","53",58263,7614893,765.1,667.3
+,"West Virginia","54",23404,1792147,1305.9,945.4
+,"Wisconsin","55",54189,5822434,930.7,721.6
+,"Wyoming","56",5121,578759,884.8,739.2
+"Total",,,2854838,328239523,869.7,715.2
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Year/Month: 2019"
+"Group By: State"
+"Show Totals: True"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Standard Population: 2000 U.S. Std. Population"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 26, 2026 5:18:23 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 26, 2026 5:18:23 PM"
+"---"
+Caveats:
+"1. The populations used to calculate standard age-adjusted rates are documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2000 Standard Population."
+"2. The method used to calculate age-adjusted rates is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Age-Adjusted Rates."
+"3. Deaths for persons of unknown age are included in counts and crude rates, but are not included in age-adjusted rates."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."
