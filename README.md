@@ -1,6 +1,6 @@
 # SI-Group-Project
 
-# Overview
+# Part 1
 [Aggiungere titolo e overview, una sorta di riassunto]
 
 
@@ -61,6 +61,11 @@ dati_raw <- get_acs(
 )
 ```
 
+
+# Part 2
+
+This repository contains a rigorous causal inference analysis based on the Oregon Health Insurance Experiment (OHIE), replicating and extending the seminal work by Finkelstein et al. (2012, QJE). The project evaluates the causal impact of expanding Medicaid access on healthcare utilization, financial security, and physical/mental health outcomes.
+The core objective of this study is to demonstrate how observational methods fail in the presence of selection bias and how a randomized controlled trial (RCT) design restores internal validity to isolate true causal mechanisms.
 
 
 
