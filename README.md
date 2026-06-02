@@ -70,6 +70,16 @@ This repository contains a rigorous causal inference analysis based on the Orego
 The core objective of this study is to demonstrate how observational methods fail in the presence of selection bias and how a randomized controlled trial (RCT) design restores internal validity to isolate true causal mechanisms.
 
 
+## Data Source
+
+The analysis uses public-use data from the Oregon Health Insurance Experiment (OHIE).
+
+Datasets:
+- oregonhie_descriptive_vars
+- oregonhie_survey12m_vars
+- oregonhie_stateprograms_vars
+
+Users can obtain the original datasets from the OHIE public-use data archive or ICPSR.
 
 
 # Disclaimer
