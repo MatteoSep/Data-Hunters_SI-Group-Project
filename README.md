@@ -1,9 +1,11 @@
 # SI-Group-Project
-Within this repository we...
-
+This repository contains the documentation and the code for the project of the Statistical Inference course, Università di Roma La Sapienza
+<br>
+<br>
+The first part investigates in the cross-sectional relationship between health insurance coverage and mortality across US states using OLS regression. <br>
+In the second part the Oregon Medical Lottery will be used to estimate the causal effect of insurance on health outcomes via instrumental variables.
 # Part 1
-[Aggiungere titolo e overview, una sorta di riassunto]
-
+We examine the association between health insurance coverage rates and mortality at the state level, using 2019 cross-sectional data. The analysis builds progressively from a bivariate model to a fully specified specification controlling for median age and poverty rate, illustrating how omitted variable bias affects the estimated insurance coefficient. We also distinguish between all-cause mortality and medical-cause mortality (diabetes, hypertension, neurological conditions), which respond differently to insurance coverage.
 
 
 ## Data Sources 
@@ -65,24 +67,25 @@ dati_raw <- get_acs(
 <br>
 
 # Part 2: Causal Inference (Oregon Health Insurance Experiment)
-
-We use the Oregon Medicaid lottery (Finkelstein et al., 2012, QJE) as a 
-natural experiment to estimate the causal effect of health insurance on 
-health outcomes and healthcare utilization.
-
-**Identification strategy:** Instrumental Variables (IV/2SLS)  
-- Instrument: lottery win (`treatment`)  
-- Endogenous variable: Medicaid enrollment (`insured`)  
-- Outcomes: self-reported health, healthcare use, financial strain  
-
-**Data source:** OHIE Public Use Files, Harvard Dataverse  
-DOI: [10.7910/DVN/SJG1ED](https://doi.org/10.7910/DVN/SJG1ED)  
-Reference paper: Finkelstein et al. (2012), DOI: 10.1093/qje/qjs020
-
-**Main files:**
-- `part2/part2_analysis.Rmd` – full analysis script
-- `data/raw/` – the three .dta files used (see Part II README for details)
-
+Oregon's 2008 Medicaid expansion was not a standard policy rollout — the state had more applicants than available slots, so it allocated coverage by lottery. This created a rare situation in which treatment (Medicaid enrollment) was effectively randomized at the household level, making the lottery a credible instrument for insurance coverage.
+ 
+We use this design to estimate the causal effect of gaining Medicaid coverage on self-reported health, healthcare utilization, and financial strain, following the identification strategy of Finkelstein et al. (2012). The estimator is two-stage least squares (2SLS): lottery win instruments for actual enrollment, and outcomes are measured through the 12-month follow-up survey.
+ 
+## Data Sources
+ 
+Data come from the OHIE Public Use Files, distributed via Harvard Dataverse under open access. The full lottery list covers N = 74,922 individuals across 66,385 households. All files are linkable via `person_id`.
+ 
+The analysis uses three of the eight available `.dta` files: `oregonhie_descriptive_vars` (treatment assignment and pre-randomization controls), `oregonhie_survey12m_vars` (12-month outcomes and survey weights), and `oregonhie_stateprograms_vars` (administrative Medicaid enrollment records).
+ 
+The `.dta` files are not committed to this repository due to size. See [`docs/ohie_data.md`](docs/ohie_data.md) for full variable documentation and retrieval instructions.
+ 
+**Dataset:** OHIE Public Use Files, Harvard Dataverse — DOI: [10.7910/DVN/SJG1ED](https://doi.org/10.7910/DVN/SJG1ED)  
+**Reference paper:** Finkelstein et al. (2012), QJE 127(3): 1057–1106 — DOI: [10.1093/qje/qjs020](https://doi.org/10.1093/qje/qjs020)
+ 
+## Main Files
+ 
+- `part2/part2_analysis.Rmd` — full analysis script (data loading, IV estimation, tables, figures)
+- `docs/ohie_data.md` — variable documentation and data retrieval guide
 
 # Disclaimer
 This repository was created for academic purposes as part of the Statistical Inference course project, Università di Roma La Sapienza.  
