@@ -6,7 +6,7 @@ Within this repository we...
 
 
 
-# Data Sources 
+## Data Sources 
 Socioeconomic data were retrieved from the American Community Survey (ACS) using the tidycensus R package. 
 State-level observations correspond to the 2019 ACS 1-year estimates.
 
@@ -38,7 +38,7 @@ Additional information related to the variables description can be seen [here](d
 
 
 
-# Setup
+## Setup
 
 ```r
 library(tidycensus)
@@ -47,7 +47,7 @@ library(tidyverse)
 census_api_key("API_KEY", install=TRUE)
 ```
 
-# Variables selection and Data retrieval
+## Variables selection and Data retrieval
 
 ```r
 dati_raw <- get_acs(
