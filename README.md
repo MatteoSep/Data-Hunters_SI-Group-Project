@@ -1,4 +1,5 @@
 # SI-Group-Project
+Within this repository we...
 
 # Part 1
 [Aggiungere titolo e overview, una sorta di riassunto]
