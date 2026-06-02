@@ -64,22 +64,24 @@ dati_raw <- get_acs(
 
 <br>
 
-# Part 2
+# Part 2: Causal Inference (Oregon Health Insurance Experiment)
 
-This repository contains a rigorous causal inference analysis based on the Oregon Health Insurance Experiment (OHIE), replicating and extending the seminal work by Finkelstein et al. (2012, QJE). The project evaluates the causal impact of expanding Medicaid access on healthcare utilization, financial security, and physical/mental health outcomes.
-The core objective of this study is to demonstrate how observational methods fail in the presence of selection bias and how a randomized controlled trial (RCT) design restores internal validity to isolate true causal mechanisms.
+We use the Oregon Medicaid lottery (Finkelstein et al., 2012, QJE) as a 
+natural experiment to estimate the causal effect of health insurance on 
+health outcomes and healthcare utilization.
 
+**Identification strategy:** Instrumental Variables (IV/2SLS)  
+- Instrument: lottery win (`treatment`)  
+- Endogenous variable: Medicaid enrollment (`insured`)  
+- Outcomes: self-reported health, healthcare use, financial strain  
 
-## Data Source
+**Data source:** OHIE Public Use Files, Harvard Dataverse  
+DOI: [10.7910/DVN/SJG1ED](https://doi.org/10.7910/DVN/SJG1ED)  
+Reference paper: Finkelstein et al. (2012), DOI: 10.1093/qje/qjs020
 
-The analysis uses public-use data from the Oregon Health Insurance Experiment (OHIE).
-
-Datasets:
-- oregonhie_descriptive_vars
-- oregonhie_survey12m_vars
-- oregonhie_stateprograms_vars
-
-Users can obtain the original datasets from the OHIE public-use data archive or ICPSR.
+**Main files:**
+- `part2/part2_analysis.Rmd` – full analysis script
+- `data/raw/` – the three .dta files used (see Part II README for details)
 
 
 # Disclaimer
