@@ -47,7 +47,7 @@ allcause_mortality_per_100k <- cause_mortality[, -c(1, 3, 4, 5)]
 allcause_mortality_per_100k <- allcause_mortality_per_100k %>%
   rename(crude_rate_mortality = 2, age_adjusted_mortality=3)
 
-medical_cause_per_100k<-read_csv("data/medical_cause _of_death.csv")[, -c(1, 3, 4, 5)]
+medical_cause_per_100k<-read_csv("data/medical_cause_of_death.csv")[, -c(1, 3, 4, 5)]
 medical_cause_per_100k<- medical_cause_per_100k%>%
   rename(crude_rate_medical_mortality = 2, age_adjusted_medical_mortality=3)
 
