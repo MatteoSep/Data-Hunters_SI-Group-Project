@@ -42,6 +42,8 @@ Additional information related to the variables description can be seen [here](d
 
 ## Setup
 
+This script automates the API data ingestion from the US Census Bureau, harmonizes the metrics, and merges them with the epidemiological data from CDC WONDER.
+
 ```r
 library(tidycensus)
 library(tidyverse)
