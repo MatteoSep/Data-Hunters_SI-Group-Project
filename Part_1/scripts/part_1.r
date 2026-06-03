@@ -41,13 +41,13 @@ dataset_census <- dati_raw %>%
 head(dataset_census)
 
 library(readr)
-cause_mortality<- read_csv("data/data_1/Cause_of_Death.csv")
+cause_mortality<- read_csv("data/data_1/raw/Cause_of_Death.csv")
 
 allcause_mortality_per_100k <- cause_mortality[, -c(1, 3, 4, 5)]
 allcause_mortality_per_100k <- allcause_mortality_per_100k %>%
   rename(crude_rate_mortality = 2, age_adjusted_mortality=3)
 
-medical_cause_per_100k<-read_csv("data/data_1/medical_cause_of_death.csv")[, -c(1, 3, 4, 5)]
+medical_cause_per_100k<-read_csv("data/data_1/raw/medical_cause_of_death.csv")[, -c(1, 3, 4, 5)]
 medical_cause_per_100k<- medical_cause_per_100k%>%
   rename(crude_rate_medical_mortality = 2, age_adjusted_medical_mortality=3)
 
@@ -67,5 +67,5 @@ head(dataset_finale)
 print(paste("Numero di stati uniti con successo:", nrow(dataset_finale)))
 
 Sys.info()["user"]
-write_csv(dataset_finale, "data/data_1/mio_dataset_output.csv")
+write_csv(dataset_finale, "data/data_1/processed/mio_dataset_output.csv")
 
