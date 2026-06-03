@@ -9,7 +9,7 @@ We examine the association between health insurance coverage rates and mortality
 
 
 ## Data Sources 
-Socioeconomic data were retrieved from the American Community Survey (ACS) using the tidycensus R package. 
+Socioeconomic data were retrieved from the American Community Survey (ACS) using the tidycensus R package. <br>
 State-level observations correspond to the 2019 ACS 1-year estimates.
 
 Official ACS variable documentation:
