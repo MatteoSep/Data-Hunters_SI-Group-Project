@@ -42,8 +42,7 @@ Additional information related to the variables description can be seen [here](d
 
 ## Setup
 
-This script automates the API data ingestion from the US Census Bureau, harmonizes the metrics, and merges them with the epidemiological data from CDC WONDER.
-
+To ensure reproducibility, initialize the environment by loading the required libraries and setting up your federal API credentials:
 ```r
 library(tidycensus)
 library(tidyverse)
@@ -51,20 +50,7 @@ library(tidyverse)
 census_api_key("API_KEY", install=TRUE)
 ```
 
-## Variables selection and Data retrieval
-
-```r
-dati_raw <- get_acs(
-  geography = "state",
-  variables = c(median_income = "B19013_001",
-                poverty_rate   = "DP03_0128PE",
-                insurance_rate = "DP03_0096PE",
-                median_age = "B01002_001E"),
-  year      = anno_studio,
-  survey    = "acs1",
-  output    = "wide",
-)
-```
+More information related to the data retrievial [da mettere il link]
 
 <br>
 
