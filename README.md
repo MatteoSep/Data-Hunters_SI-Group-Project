@@ -9,7 +9,7 @@ We examine the association between health insurance coverage rates and mortality
 
 
 ## Data Sources 
-Socioeconomic data were retrieved from the American Community Survey (ACS) using the tidycensus R package. <br>
+**Socioeconomic data** were retrieved from the American Community Survey (ACS) using the tidycensus R package. <br>
 State-level observations correspond to the 2019 ACS 1-year estimates.
 
 Official ACS variable documentation:
@@ -27,9 +27,9 @@ Official ACS variable documentation:
 - Median age (`B01002_001E`)  
   https://api.census.gov/data/2019/acs/acs1/variables/B01002_001E.html
 
+<br>
 
-
-Mortality data were retrieved from the CDC WONDER Multiple Cause of Death database:
+**Mortality data** were retrieved from the CDC WONDER Multiple Cause of Death database:
 
 CDC WONDER mortality data:
 https://wonder.cdc.gov/
