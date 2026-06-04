@@ -7,7 +7,6 @@ library(tidyverse)
 
 census_api_key("API_KEY", install=TRUE, overwrite = TRUE)
 readRenviron("~/.Renviron")
-options(timeout = 300) # Imposta il timeout a 5 minuti
 
 anno_studio <- 2019
 
@@ -35,7 +34,7 @@ dataset_census <- dati_raw %>%
   mutate(  poverty_per_100k   = poverty_rate * 1000,
     insurance_per_100k = insurance_rate * 1000
   ) %>%
-  # Rimuoviamo i vecchi tassi in percentuale per non confonderci durante la regressione
+
   select(-poverty_rate, -insurance_rate)
 
 head(dataset_census)
