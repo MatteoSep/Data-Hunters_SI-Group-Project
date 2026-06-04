@@ -12,7 +12,9 @@ Part I studies the cross-sectional relationship between health insurance and mor
 
 
 
-Additional information related to the variables description can be seen [here](docs/Part_1/acs_variables.md) 
+The information reated to the data retrievial for the first 
+
+[here](docs/Part_1/acs_variables.md) 
 
 
 
