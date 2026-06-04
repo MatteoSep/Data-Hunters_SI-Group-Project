@@ -148,7 +148,8 @@ A successful run should return 50 or 51 observations (50 states + Washington D.C
 write_csv(dataset_finale, "data/data_1/processed/mio_dataset_output.csv")
 ```
 
-Saves the final dataset as a CSV file to the `processed` subfolder. This file is the direct input for all regression models in Part I.
+Saves the final dataset as a CSV file to the `processed` subfolder. This file is the direct input for all regression models in Part I. <br>
+<br>
 The Data Dictionary and additional information related to the output`mio_dataset_output.csv` can be seen in the following link:
 
 [Data Dictionary](../../data/data_1/README.md)
