@@ -149,8 +149,9 @@ write_csv(dataset_finale, "data/data_1/processed/mio_dataset_output.csv")
 ```
 
 Saves the final dataset as a CSV file to the `processed` subfolder. This file is the direct input for all regression models in Part I.
+The Data Dictionary and additional information related to the output`mio_dataset_output.csv` can be seen in the following link:
 
-[Variable Dictionary](../../data/data_1/README.md)
+[Data Dictionary](../../data/data_1/README.md)
 
 ---
 
