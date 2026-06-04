@@ -1,4 +1,4 @@
-# Data Pipeline — Part I: Cross-Sectional State-Level Dataset
+# Part I: Cross-Sectional State-Level Dataset
 
 ## Overview
 
@@ -44,7 +44,7 @@ This stores the key permanently in your `.Renviron` file so you do not need to r
 
 ## Script Walkthrough
 
-### Step 1 — Environment Setup
+### Step 1: Environment Setup
 
 ```r
 rm(list = ls())
@@ -54,7 +54,7 @@ Clears the R environment to ensure a clean session with no leftover objects from
 
 ---
 
-### Step 2 — ACS Data Download via `tidycensus`
+### Step 2: ACS Data Download via `tidycensus`
 
 ```r
 dati_raw <- get_acs(
@@ -84,7 +84,7 @@ The `output = "wide"` argument returns one row per state with all variables as c
 
 ---
 
-### Step 3 — Census Data Cleaning
+### Step 3: Census Data Cleaning
 
 ```r
 dataset_census <- dati_raw %>%
@@ -102,7 +102,7 @@ dataset_census <- dati_raw %>%
 
 ---
 
-### Step 4 — Mortality Data Import
+### Step 4: Mortality Data Import
 
 ```r
 cause_mortality <- read_csv("data/data_1/raw/Cause_of_Death.csv")
@@ -124,7 +124,7 @@ Columns 1, 3, 4, and 5 are dropped as they contain CDC metadata not needed for t
 
 ---
 
-### Step 5 — Final Dataset Assembly
+### Step 5: Final Dataset Assembly
 
 ```r
 dataset_finale <- dataset_census %>%
@@ -142,7 +142,7 @@ A successful run should return 50 or 51 observations (50 states + Washington D.C
 
 ---
 
-### Step 6 — Export
+### Step 6: Export
 
 ```r
 write_csv(dataset_finale, "data/data_1/processed/mio_dataset_output.csv")
@@ -150,45 +150,13 @@ write_csv(dataset_finale, "data/data_1/processed/mio_dataset_output.csv")
 
 Saves the final dataset as a CSV file to the `processed` subfolder. This file is the direct input for all regression models in Part I.
 
----
-
-## Output Dataset — Variable Dictionary
-
-| Variable | Description | Unit | Source |
-|---|---|---|---|
-| `GEOID` | State FIPS code | — | Census |
-| `NAME` | State name | — | Census |
-| `median_income` | Median household income | USD | ACS 2019 |
-| `median_age` | Median age | Years | ACS 2019 |
-| `poverty_per_100k` | Poverty rate (rescaled) | Per 100,000 | ACS 2019 |
-| `insurance_per_100k` | Insurance coverage rate (rescaled) | Per 100,000 | ACS 2019 |
-| `crude_rate_mortality` | All-cause crude mortality rate | Per 100,000 | CDC WONDER |
-| `age_adjusted_mortality` | All-cause age-adjusted mortality rate | Per 100,000 | CDC WONDER |
-| `crude_rate_medical_mortality` | Medical-cause crude mortality rate | Per 100,000 | CDC WONDER |
-| `age_adjusted_medical_mortality` | Medical-cause age-adjusted mortality rate | Per 100,000 | CDC WONDER |
-
----
-
-## File Structure
-
-```
-project/
-├── data/
-│   └── data_1/
-│       ├── raw/
-│       │   ├── Cause_of_Death.csv
-│       │   └── medical_cause_of_death.csv
-│       └── processed/
-│           └── mio_dataset_output.csv
-└── scripts/
-    └── data_pipeline.R
-```
+[Variable Dictionary] (data/data_1/README.md)
 
 ---
 
 ## AI Disclosure
 
-The development of this script was assisted by AI tools (Claude, Anthropic), primarily for code structuring, variable selection logic, and documentation. All analytical decisions — variable choice, model specification, and interpretation — were made by the research group. The use of AI assistance is disclosed in accordance with the course policy on AI tools stated in the assignment guidelines.
+The development of this script was assisted by AI tools (Claude, Anthropic), primarily for code structuring, variable selection logic, and documentation. All analytical decisions were made by the research group. The use of AI assistance is disclosed in accordance with the course policy on AI tools stated in the assignment guidelines.
 
 ---
 
