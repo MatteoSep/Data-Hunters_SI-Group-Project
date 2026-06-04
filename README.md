@@ -35,7 +35,7 @@ CDC WONDER mortality data:
 https://wonder.cdc.gov/
 
 
-Additional information related to the variables description can be seen [here](docs/acs_variables.md) 
+Additional information related to the variables description can be seen [here](docs/Part_1/acs_variables.md) 
 
 
 
@@ -65,7 +65,7 @@ Data come from the OHIE Public Use Files, distributed via Harvard Dataverse unde
  
 The analysis uses three of the eight available `.dta` files: `oregonhie_descriptive_vars` (treatment assignment and pre-randomization controls), `oregonhie_survey12m_vars` (12-month outcomes and survey weights), and `oregonhie_stateprograms_vars` (administrative Medicaid enrollment records).
  
-The `.dta` files are not committed to this repository due to size. See [`docs/ohie_data.md`](docs/ohie_data.md) for full variable documentation and retrieval instructions.
+The `.dta` files are not committed to this repository due to size. See [`docs/ohie_data.md`](docs/Part_2/ohie_data.md) for full variable documentation and retrieval instructions.
  
 **Dataset:** OHIE Public Use Files, Harvard Dataverse — DOI: [10.7910/DVN/SJG1ED](https://doi.org/10.7910/DVN/SJG1ED)  
 **Reference paper:** Finkelstein et al. (2012), QJE 127(3): 1057–1106 — DOI: [10.1093/qje/qjs020](https://doi.org/10.1093/qje/qjs020)
