@@ -1,59 +1,65 @@
-# Part 2: Experimental Data – Oregon Health Insurance Experiment (Oregon HIE)
+# Part II: Experimental Data — Oregon Health Insurance Experiment (OHIE)
 
-This directory contains the replication datasets from the **Oregon Health Insurance Experiment (Oregon HIE)**, a landmark randomized controlled trial (RCT) in health economics. The study leverages a 2008 lottery system to evaluate the causal impact of expanding Medicaid coverage to low-income, uninsured adults.
+This directory contains the replication datasets from the **Oregon Health Insurance Experiment (OHIE)**, a landmark randomized controlled trial (RCT) in health economics. The study leverages a 2008 lottery system to evaluate the causal impact of expanding Medicaid coverage to low-income, uninsured adults.
 
-> ⚠️ **Note on File Previews:** These files are stored in Stata's native binary format (`.dta`). GitHub cannot display interactive previews for binary datasets. Please follow the instructions below to download and import them into your statistical software (R or Stata).
-
-## Directory Structure & File Content
-
-The experimental design is broken down into three core specialized datasets, which must be combined via relational joins using the unique identifier `person_id`.
-
-### 1. `oregonhie_descriptive_vars.dta`
-* **Core Purpose:** Contains baseline demographics and lottery randomization tracking parameters.
-* **Key Variables:**
-    * `person_id` & `household_id`: Primary and relational cryptographic identifiers.
-    * `treatment`: The foundational lottery selection indicator ($1 = \text{Selected/Won}$, $0 = \text{Not Selected}$). This is your **Instrumental Variable (IV)**.
-    * `birthyear_list`, `female_list`, `english_list`: Baseline pre-treatment covariates used to check balancing properties and control specifications.
-
-### 2. `oregonhie_stateprograms_vars.dta`
-* **Core Purpose:** Administrative longitudinal tracking of actual insurance enrollment through state health programs (Medicaid/OHP).
-* **Key Variables:**
-    * `ohp_all_ever_matchn_30sep2009`: Indicator of whether the individual actually enrolled in health insurance during the study window. This is your endogenous treatment variable.
-    * `six_mos`, `twelve_mos`, `inp_mos`: Total duration parameters measuring institutional exposure and enrollment intensity (months of coverage).
-
-### 3. `oregonhie_survey12m_vars.dta`
-* **Core Purpose:** Out-of-sample data collected via a comprehensive mail survey administered approximately 12 months post-randomization.
-* **Key Variables:**
-    * `sample_12m` & `sample_12m_resp`: Sampling matrices and non-response tracking weights.
-    * **Outcomes:** Contains survey answers regarding health service utilization (ER visits, hospitalizations), self-reported health metrics, and financial distress measures (medical debt).
+> ⚠️ **Note on file previews:** These files are stored in Stata's native binary format (`.dta`). GitHub cannot display interactive previews for binary datasets. Please follow the instructions below to download and import them into R or Stata.
 
 ---
 
-## How to Download the Files from GitHub
+## Files in this directory
 
-If you are not cloning the entire repository via Git, you can extract individual datasets manually through the web browser:
-1. Click on the target `.dta` file inside the GitHub repository interface.
-2. Look for the **"Download raw file"** button (or the `Download` button located on the top right of the file box).
-3. Right-click the button and select **"Save Link As..."** to download the original binary file directly to your local workspace.
+The experimental design is split across three specialized datasets, which must be merged using the unique individual identifier `person_id`. A pre-merged version is also available as `dt.csv` for convenience.
+
+### `oregonhie_descriptive_vars.dta`
+Contains baseline demographics and lottery randomization variables. The key variables are `person_id` and `household_id` (individual and household identifiers), `treatment` (the lottery selection indicator: 1 = selected, 0 = not selected — this is the **instrumental variable**), and baseline pre-treatment covariates such as `birthyear_list`, `female_list`, and `english_list`, used for balance checks and control specifications.
+
+### `oregonhie_stateprograms_vars.dta`
+Administrative records tracking actual Medicaid enrollment through state health programs. The key variable is `ohp_all_ever_matchn_30sep2009`, an indicator of whether the individual ever enrolled in Medicaid during the study window — this is the **endogenous treatment variable**. Also contains duration variables measuring months of coverage.
+
+### `oregonhie_survey12m_vars.dta`
+Data from a comprehensive mail survey administered approximately 12 months post-randomization. Contains `sample_12m` and `sample_12m_resp` (response tracking and survey weights), and all survey-based outcome variables: health care utilization (ER visits, hospitalizations, outpatient visits), self-reported health measures, and financial strain indicators (medical debt, out-of-pocket expenditures).
+
+### `dt.csv`
+Pre-merged version of the three `.dta` files above, joined on `person_id` and exported to CSV. This is the file directly used by the analysis scripts. See the scripts README for details on how it was constructed.
 
 ---
 
-## Ingestion Setup: Importing into R & Stata
+## How to download individual files from GitHub
 
-To successfully parse and load these Stata binary data structures into your current analytical pipeline, implement the following script initializations.
+If you are not cloning the full repository, you can download individual files manually:
 
-### Importing into R
-To read `.dta` files in R while preserving variable labels and format specifications, use the `haven` package:
+1. Click on the target `.dta` file in the GitHub interface.
+2. Click the **"Download raw file"** button (top right of the file preview box).
+3. Right-click and select **"Save Link As..."** to save the binary file to your local machine.
+
+---
+
+## Importing into R and Stata
+
+### R
 
 ```r
-# Install haven if not already present
-if(!require(haven)) install.packages("haven")
 library(haven)
 
-# Load the datasets into your environment
-descriptive <- read_dta("path/to/folder/oregonhie_descriptive_vars.dta")
-state_programs <- read_dta("path/to/folder/oregonhie_stateprograms_vars.dta")
-survey_12m <- read_dta("path/to/folder/oregonhie_survey12m_vars.dta")
+desc <- read_dta("path/to/oregonhie_descriptive_vars.dta")
+sp   <- read_dta("path/to/oregonhie_stateprograms_vars.dta")
+s12  <- read_dta("path/to/oregonhie_survey12m_vars.dta")
 
-# Inspect structure
-head(descriptive)
+head(desc)
+```
+
+Note: `haven` imports Stata variables as `haven_labelled` objects. Strip labels before modelling with `haven::zap_labels()` — see the analysis script for details.
+
+### Stata
+
+```stata
+use "path/to/oregonhie_descriptive_vars.dta", clear
+merge 1:1 person_id using "path/to/oregonhie_stateprograms_vars.dta"
+merge 1:1 person_id using "path/to/oregonhie_survey12m_vars.dta"
+```
+
+---
+
+## Reference
+
+Finkelstein A, Taubman S, Wright B, et al. (2012). The Oregon Health Insurance Experiment: Evidence from the First Year. *Quarterly Journal of Economics*, 127(3), 1057–1106.
