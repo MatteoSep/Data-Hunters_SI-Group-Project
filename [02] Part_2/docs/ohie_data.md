@@ -17,7 +17,6 @@ Two separate identifiers must be cited for different purposes:
 | **Paper (QJE)** | Finkelstein et al. (2012), *The Oregon Health Insurance Experiment: Evidence from the First Year*, QJE 127(3): 1057–1106 | [10.1093/qje/qjs020](https://doi.org/10.1093/qje/qjs020) |
 | **Dataset** | OHIE Public Use Files — the `.dta` files used in this analysis | [10.7910/DVN/SJG1ED](https://doi.org/10.7910/DVN/SJG1ED) |
 
-> **Note:** Do not cite the NBER working paper DOI (10.3386/w17190) — that is the pre-publication version. Use the QJE DOI above as the methodological reference.
 
 ---
 
