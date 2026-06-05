@@ -14,10 +14,15 @@ The methodological lesson is that identification, not statistical adjustment, is
 
 
 # Structure
-This repository contains the final output within the folder `[00] Paper`. <br>
-It also provides additional information related to data retrieval and processing for both parts `[01] Part_1` and `[02] Part_2` <br>
-While working on part 2 
-### Future Extension — Callaway & Sant'Anna DiD (incomplete)
+**`[00] Paper/`** contains the final output: the submitted PDF report and all clean, commented R scripts used in the analysis.
+ 
+**`[01] Part_1/`** provides additional documentation on data retrieval and processing for the cross-sectional OLS analysis, including the data pipeline script, raw CDC WONDER files, and the processed dataset.
+ 
+**`[02] Part_2/`** provides additional documentation on data retrieval and processing for the causal analysis, including the OHIE replication script and variable construction.
+ 
+**`future extension Part_2/`** contains preliminary work on a planned but incomplete extension to Part 2.
+
+### Future Extension: Callaway & Sant'Anna DiD (incomplete)
 While working on Part 2, we explored a complementary extension based on the Callaway & Sant'Anna (2021) Difference-in-Differences estimator, which handles heterogeneous treatment effects in staggered adoption designs. <br>
 <br>
 The idea was to complement the OHIE RCT evidence, specific to Oregon in 2008, with a broader quasi-experimental analysis of the ACA Medicaid expansions starting in 2014, where states adopted the policy at different points in time. The Callaway & Sant'Anna estimator is methodologically appropriate for this setting because it accounts for treatment timing heterogeneity across cohorts and avoids the negative-weighting problem of standard two-way fixed effects DiD. <br>
@@ -25,6 +30,8 @@ The idea was to complement the OHIE RCT evidence, specific to Oregon in 2008, wi
 Due to time and resource constraints, this analysis was not completed and is not part of the submitted paper. <br>
 The folder `[03] future extension part_2` contains the data assembled and the preliminary notes outlining the intended design. <br>
 This material is included for transparency only and does not form part of the graded submission.
+
+
 # Disclaimer
 This repository was created for academic purposes as part of the Statistical Inference course project, Università di Roma La Sapienza.  
 All data sources belong to their respective owners, including the U.S. Census Bureau and CDC WONDER.
