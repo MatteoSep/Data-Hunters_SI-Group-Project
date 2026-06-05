@@ -18,7 +18,7 @@ library(haven)      # read_dta(): import Stata .dta files
 # enrollment. (The other PUF files - ED admin, in-person exam, 0m/6m surveys -
 # are not used here; see the Data section of the paper.)
 
-path <- "OHIE_Public_Use_Files/OHIE_Data"  
+path <- "[02] Part_2/data_2"  
 
 desc <- read_dta("oregonhie_descriptive_vars.dta")   # treatment, household, controls
 s12  <- read_dta("oregonhie_survey12m_vars.dta")   # 12-month outcomes + weights
