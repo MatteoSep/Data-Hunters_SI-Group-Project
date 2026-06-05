@@ -16,7 +16,6 @@ library(tidyverse)
 census_api_key("API_KEY", install=TRUE)
 ```
 
-More information related to the data retrievial [da mettere il link]
 
 <br>
 
