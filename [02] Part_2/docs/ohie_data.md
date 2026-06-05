@@ -120,20 +120,3 @@ The following variables are not read from the files but constructed in `part2_an
 | `idx_fin` | Standardized index — financial strain |
 | `idx_health` | Standardized index — self-reported health |
 
----
-
-## Methodological Reference
-
-Script alignment follows the QJE replication code included in the Harvard Dataverse archive:
-
-```
-OHIE_QJE_Replication_Code/
-├── oregon_hie_qje_replication.do
-└── SubPrograms/
-    ├── prepare_data.do
-    ├── tables_firststage.do
-    ├── tables_balance.do
-    └── tables_analysis.do
-```
-
-These Stata files are not used directly (our analysis runs in R), but served as the authoritative reference for variable construction, outcome coding, control specification, and standard error clustering.
