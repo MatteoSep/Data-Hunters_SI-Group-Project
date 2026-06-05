@@ -2,7 +2,7 @@
 
 ## Overview
 
-The data for Part II come from the **Oregon Health Insurance Experiment (OHIE) Public Use Files**, distributed via Harvard Dataverse under open access.
+The data for Part 2 come from the **Oregon Health Insurance Experiment (OHIE) Public Use Files**, distributed via Harvard Dataverse under open access.
 
 The experiment stems from Oregon's 2008 Medicaid lottery, in which the state randomly selected households from a waiting list, creating exogenous variation in health insurance coverage. The full lottery list comprises **N = 74,922 individuals** across 66,385 households. All files share a common key (`person_id`) and can be merged 1:1.
 
