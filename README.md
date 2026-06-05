@@ -2,6 +2,8 @@
 This repository contains the documentation and the code for the project of the Statistical Inference course, Università di Roma La Sapienza.
 The assignment consist of a two-part statistic project, evaluating the causal impact of public health insurance expansion on population mortality, healthcare utilization, and financial security.<br>
 
+---
+
 # Authors
 - Matteo Sepirsi Consalvi
 - Alessandro Tiburzi
