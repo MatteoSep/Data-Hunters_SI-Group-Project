@@ -152,7 +152,7 @@ Saves the final dataset as a CSV file to the `processed` subfolder. This file is
 <br>
 The Data Dictionary and additional information related to the output`mio_dataset_output.csv` can be seen in the following link:
 
-[Data Dictionary](../../data/data_1/README.md)
+[Data Dictionary](../data_1/README.md)
 
 ---
 
