@@ -6,6 +6,7 @@ The assignment consist of a two-part statistic project, evaluating the causal im
 # Abstract
 This paper asks whether expanding public health insurance causally improves health and financial security, using two complementary designs to separate correlation from causation. 
 <br>
+### The Cross-Sectional Association Between Health Insurance and Mortality: A Diagnostic OLS Analysis of U.S. States, 2019
 **Part 1** estimates cross-sectional OLS regressions of state-level mortality on insurance coverage (2019, n = 51); the association is weak and unstable across specifications, and we argue it cannot be read causally because of omitted-variable bias, reverse causality, and the ecological fallacy. 
 <br>
 ### The Causal Effects of Medicaid Coverage: Evidence from the Oregon Health Insurance Experiment
