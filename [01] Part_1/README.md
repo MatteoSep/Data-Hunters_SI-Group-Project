@@ -1,4 +1,4 @@
-# Part 1
+# The Cross-Sectional Association Between Health Insurance and Mortality: A Diagnostic OLS Analysis of U.S. States, 2019
 
 Part 1 studies the cross-sectional relationship between health insurance and mortality using U.S. state-level data for 2019 (n = 51). <br>
 We regress mortality on the insured share, progressively adding demographic and income controls and an income interaction, with heteroskedasticity-robust (HC3) standard errors. <br>
