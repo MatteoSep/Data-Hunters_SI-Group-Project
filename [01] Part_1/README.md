@@ -7,6 +7,8 @@ We argue that none of these estimates identifies a causal effect: omitted variab
 The contribution of this section is therefore diagnostic (it shows precisely why a purely observational design fails to recover the causal parameter of interest) and it motivates the quasi-experimental strategy of Part II, where randomization removes the confounding that no amount of OLS adjustment can.
 <br>
 
+---
+
 ## Structure
  
 This folder contains two subfolders. `data_1` holds the raw CDC WONDER files and the processed dataset used in the analysis. `scripts` contains the data pipeline and regression scripts. Each subfolder has its own README with details on data sources, variable definitions, and processing steps.
