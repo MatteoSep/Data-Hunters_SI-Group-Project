@@ -19,19 +19,7 @@ The information reated to the data retrievial for the first
 
 
 
-## Setup
 
-To ensure reproducibility, initialize the environment by loading the required libraries and setting up your federal API credentials:
-```r
-library(tidycensus)
-library(tidyverse)
-
-census_api_key("API_KEY", install=TRUE)
-```
-
-More information related to the data retrievial [da mettere il link]
-
-<br>
 
 # Part 2: Causal Inference (Oregon Health Insurance Experiment)
 Oregon's 2008 Medicaid expansion was not a standard policy rollout — the state had more applicants than available slots, so it allocated coverage by lottery. This created a rare situation in which treatment (Medicaid enrollment) was effectively randomized at the household level, making the lottery a credible instrument for insurance coverage.

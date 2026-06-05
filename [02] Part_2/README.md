@@ -296,11 +296,7 @@ substantively negligible.
 
 ## AI disclosure
 
-Development of this script and documentation was assisted by Claude
-(Anthropic), used for code structuring and README drafting. All analytical
-decisions follow the pre-specified analysis plan of Finkelstein et al. (2012)
-and were reviewed by the research group. Disclosed per the course AI policy
-(Assignment, p. 2).
+The development of this script was assisted by AI tools (Claude, Anthropic), primarily for code structuring, variable selection logic, and documentation. All analytical decisions were made by the research group. The use of AI assistance is disclosed in accordance with the course policy on AI tools stated in the assignment guidelines.
 
 ---
 
