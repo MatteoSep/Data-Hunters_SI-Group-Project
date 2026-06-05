@@ -20,7 +20,7 @@ The methodological lesson is that identification, not statistical adjustment, is
  
 **`[02] Part_2/`** provides additional documentation on data retrieval and processing for the causal analysis, including the OHIE replication script and variable construction.
  
-**`future extension Part_2/`** contains preliminary work on a planned but incomplete extension to Part 2.
+**`future extension part_2/`** contains preliminary work on a planned but incomplete extension to Part 2.
 
 ### Future Extension: Callaway & Sant'Anna DiD (incomplete)
 While working on Part 2, we explored a complementary extension based on the Callaway & Sant'Anna (2021) Difference-in-Differences estimator, which handles heterogeneous treatment effects in staggered adoption designs. <br>
@@ -28,7 +28,7 @@ While working on Part 2, we explored a complementary extension based on the Call
 The idea was to complement the OHIE RCT evidence, specific to Oregon in 2008, with a broader quasi-experimental analysis of the ACA Medicaid expansions starting in 2014, where states adopted the policy at different points in time. The Callaway & Sant'Anna estimator is methodologically appropriate for this setting because it accounts for treatment timing heterogeneity across cohorts and avoids the negative-weighting problem of standard two-way fixed effects DiD. <br>
 <br>
 Due to time and resource constraints, this analysis was not completed and is not part of the submitted paper. <br>
-The folder `[03] future extension part_2` contains the data assembled and the preliminary notes outlining the intended design. <br>
+The folder `future extension part_2` contains the data assembled and the preliminary notes outlining the intended design. <br>
 This material is included for transparency only and does not form part of the graded submission.
 
 
