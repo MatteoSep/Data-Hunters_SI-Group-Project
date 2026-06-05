@@ -7,24 +7,7 @@ We argue that none of these estimates identifies a causal effect: omitted variab
 The contribution of this section is therefore diagnostic (it shows precisely why a purely observational design fails to recover the causal parameter of interest) and it motivates the quasi-experimental strategy of Part II, where randomization removes the confounding that no amount of OLS adjustment can.
 <br>
 
-# Structure
+## Structure
  
-```
-[01] Part_1/
-├── data_1/        # Raw CDC WONDER files and processed dataset
-├── scripts/       # Data pipeline and regression scripts
-└── README.md      # This file
-```
- 
-For details on the data sources, variable definitions, and processing steps, see the README files inside each subfolder.
+This folder contains two subfolders. `data_1` holds the raw CDC WONDER files and the processed dataset used in the analysis. `scripts` contains the data pipeline and regression scripts. Each subfolder has its own README with details on data sources, variable definitions, and processing steps.
 
-## Setup
-
-To ensure reproducibility, initialize the environment by loading the required libraries and setting up your federal API credentials:
-```r
-library(tidycensus)
-library(tidyverse)
-
-census_api_key("API_KEY", install=TRUE)
-```
-<br>
