@@ -7,10 +7,6 @@ This script replicates the core empirical analysis of Finkelstein et al. (2012,
 data, then constructs all derived variables needed for ITT and LATE estimation
 in Part II of the project.
 
-**Reference paper:** Finkelstein A, Taubman S, Wright B, et al. (2012).
-"The Oregon Health Insurance Experiment: Evidence from the First Year."
-*Quarterly Journal of Economics*, 127(3), 1057–1106.
-doi: [10.1093/qje/qjs020](https://doi.org/10.1093/qje/qjs020)
 
 ---
 
