@@ -34,8 +34,6 @@ Two separate identifiers must be cited for different purposes:
 
 The files may also be shared directly within the project group as a `.zip` archive. If received this way, extract and place the three required files in `data/raw/` as above.
 
-> The `.dta` files are **not committed to this repository** due to file size and third-party distribution terms. The `data/raw/` folder is listed in `.gitignore`.
-
 ---
 
 ## Files Used in This Analysis
