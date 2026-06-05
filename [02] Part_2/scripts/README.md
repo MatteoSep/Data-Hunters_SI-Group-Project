@@ -1,4 +1,4 @@
-# Part II — Scripts: Oregon Health Insurance Experiment
+# Part 2: Scripts Oregon Health Insurance Experiment
 
 This script replicates the core empirical analysis of Finkelstein et al. (2012, *Quarterly Journal of Economics*) using the OHIE public-use files. It loads and merges the three source `.dta` files, constructs all derived variables, and prepares the analysis sample for ITT and LATE estimation.
 
