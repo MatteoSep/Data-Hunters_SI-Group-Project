@@ -1,8 +1,9 @@
 # From Correlation to Causation: Health Insurance, Mortality, and the Limits of Observational Inference
-### SI-Group-Project
+
 This repository contains the documentation and the code for the project of the Statistical Inference course, Università di Roma La Sapienza.
 The assignment consist of a two-part statistic project, evaluating the causal impact of public health insurance expansion on population mortality, healthcare utilization, and financial security.<br>
 
+---
 
 # Abstract
 This paper asks whether expanding public health insurance causally improves health and financial security, using two complementary designs to separate correlation from causation. 
@@ -15,6 +16,7 @@ This paper asks whether expanding public health insurance causally improves heal
 Comparing observational (OLS, matching) with experimental (LATE) estimates on the same data exhibits the selection bias directly. <br>
 The methodological lesson is that identification, not statistical adjustment, is what delivers credible causal estimates.
 
+---
 
 # Structure
 **`[00] Paper/`** contains the final output: the submitted PDF report and all clean, commented R scripts used in the analysis.
@@ -34,6 +36,7 @@ Due to time and resource constraints, this analysis was not completed and is not
 The folder `future extension part_2` contains the data assembled and the preliminary notes outlining the intended design. <br>
 This material is included for transparency only and does not form part of the graded submission.
 
+---
 
 # Disclaimer
 This repository was created for academic purposes as part of the Statistical Inference course project, Università di Roma La Sapienza.  
