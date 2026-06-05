@@ -1,6 +1,6 @@
 # Future Extension — ACA Medicaid Expansion and Mortality (Incomplete)
 
-> ⚠️ **This analysis was not completed.** The material in this folder represents preliminary work that was developed primarily with AI assistance (Claude, Anthropic) and was not finished due to time and resource constraints. It does not form part of the graded submission and should be interpreted accordingly.
+> **This analysis was not completed.** The material in this folder represents preliminary work that was developed primarily with AI assistance and was not finished due to time and resource constraints. It does not form part of the graded submission and should be interpreted accordingly.
 
 ---
 
@@ -42,7 +42,10 @@ An R script implementing the preliminary Callaway & Sant'Anna estimation will be
 
 ## Why this was not completed
 
-The extension required a significant additional investment of time to: (i) correctly implement the Callaway & Sant'Anna estimator with county-level clustering and covariate adjustment; (ii) validate pre-trend parallel assumptions across cohorts; (iii) reproduce and cross-check results against Borgschulte & Vogler (2020). Given the deadline and the workload already required by Parts I and II, we were unable to bring this analysis to a standard we considered suitable for submission.
+The extension required a significant additional investment of time to: 
+- correctly implement the Callaway & Sant'Anna estimator with county-level clustering and covariate adjustment;
+- validate pre-trend parallel assumptions across cohorts;
+- reproduce and cross-check results against Borgschulte & Vogler (2020). Given the deadline and the workload already required by Parts 1 and 2, we were unable to bring this analysis to a standard we considered suitable for submission.
 
 The preliminary data assembly and design notes are included here for transparency and to document the direction we had explored.
 
