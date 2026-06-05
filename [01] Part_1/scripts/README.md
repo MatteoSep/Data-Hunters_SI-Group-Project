@@ -16,6 +16,9 @@ The resulting dataset is saved to `data/data_1/processed/mio_dataset_output.csv`
 | CDC WONDER — All-Cause Mortality | Crude mortality rate, age-adjusted mortality rate | Manual download, stored locally |
 | CDC WONDER — Medical-Cause Mortality | Crude medical mortality rate, age-adjusted medical mortality rate | Manual download, stored locally |
 
+Additional information related to data sources and retrieval can be found [here](../data_1/README.md)
+
+
 ---
 
 ## Requirements
@@ -150,7 +153,7 @@ write_csv(dataset_finale, "data/data_1/processed/mio_dataset_output.csv")
 
 Saves the final dataset as a CSV file to the `processed` subfolder. This file is the direct input for all regression models in Part I. <br>
 <br>
-The Data Dictionary and additional information related to the output`mio_dataset_output.csv` can be seen in the following link:
+The Data Dictionary and additional information related to the output`mio_dataset_output.csv` can also be seen in the following link:
 
 [Data Dictionary](../data_1/README.md)
 
