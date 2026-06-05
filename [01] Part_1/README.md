@@ -15,7 +15,4 @@ library(tidyverse)
 
 census_api_key("API_KEY", install=TRUE)
 ```
-
-
 <br>
-
