@@ -6,7 +6,7 @@
 
 ## Motivation
 
-Part II of our project (OHIE replication) provides experimental evidence on the effects of Medicaid on health outcomes, but its external validity is limited: the study population is specific to Portland-area low-income adults in 2008, and the 16-month follow-up window is too short to detect mortality effects with adequate statistical power (Finkelstein et al., 2012; Baicker & Finkelstein, 2011).
+Part 2 of our project (OHIE replication) provides experimental evidence on the effects of Medicaid on health outcomes, but its external validity is limited: the study population is specific to Portland-area low-income adults in 2008, and the 16-month follow-up window is too short to detect mortality effects with adequate statistical power (Finkelstein et al., 2012; Baicker & Finkelstein, 2011).
 
 This extension was intended to complement the OHIE evidence by exploiting the **ACA Medicaid expansions starting in 2014**, which affected a much larger population across multiple states and allows for the estimation of longer-run mortality effects. The reference paper for this extension is:
 
