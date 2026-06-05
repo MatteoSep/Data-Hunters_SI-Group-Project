@@ -34,9 +34,8 @@ The key identification assumption is **parallel trends conditional on covariates
 
 `Journal_of_Health_Economics.pdf` is the Borgschulte & Vogler (2020) paper, which serves as the methodological and empirical reference for this extension.
 
-`panel_state_year.csv` is the main panel dataset assembled for the analysis. It contains annual county-level mortality rates and socioeconomic covariates for U.S. counties from 2010 to 2019, merged from CDC WONDER and U.S. Census sources. The `data/` subfolder contains the three underlying CDC WONDER mortality files used to construct it: all-cause mortality (`cdc_allcause_25-64_2010-2019.csv`), amenable-cause mortality (`cdc_amenable_25-64_2010-2019.csv`), and external-cause-filtered mortality (`cdc_external_filtered_25-64_2010-2019.csv`), all for adults aged 25–64.
+`panel_state_year.csv`, contained in the `data/` subfolder, is the main panel dataset assembled for the analysis. It contains annual county-level mortality rates and socioeconomic covariates for U.S. counties from 2010 to 2019, merged from CDC WONDER and U.S. Census sources. The `data/` subfolder also contains the three underlying CDC WONDER mortality files used to construct it: all-cause mortality (`cdc_allcause_25-64_2010-2019.csv`), amenable-cause mortality (`cdc_amenable_25-64_2010-2019.csv`), and external-cause-filtered mortality (`cdc_external_filtered_25-64_2010-2019.csv`), all for adults aged 25–64.
 
-An R script implementing the preliminary Callaway & Sant'Anna estimation will be added to this folder separately.
 
 ---
 
