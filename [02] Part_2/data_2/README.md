@@ -2,7 +2,7 @@
 
 This directory contains the replication datasets from the **Oregon Health Insurance Experiment (OHIE)**, a landmark randomized controlled trial (RCT) in health economics. The study leverages a 2008 lottery system to evaluate the causal impact of expanding Medicaid coverage to low-income, uninsured adults.
 
-> ⚠️ **Note on file previews:** These files are stored in Stata's native binary format (`.dta`). GitHub cannot display interactive previews for binary datasets. Please follow the instructions below to download and import them into R or Stata.
+> **Note on file previews:** These files are stored in Stata's native binary format (`.dta`). GitHub cannot display interactive previews for binary datasets. Please follow the instructions below to download and import them into R or Stata.
 
 ---
 
