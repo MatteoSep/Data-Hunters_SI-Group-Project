@@ -30,7 +30,8 @@ The script then estimates three quantities: the **ITT** (effect of winning the l
 
 ## AI disclosure
 
-Development of this script was assisted by Claude (Anthropic), used for code structuring and documentation drafting. All analytical decisions were made by the research group. Disclosed per the course AI policy (Assignment, p. 2).
+The development of this script was assisted by AI tools (Claude, Anthropic), primarily for code structuring, variable selection logic, and documentation. All analytical decisions were made by the research group. The use of AI assistance is disclosed in accordance with the course policy on AI tools stated in the assignment guidelines.
+
 
 ---
 
