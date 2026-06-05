@@ -34,7 +34,7 @@ This folder contains two subfolders and several files at the root level. `data` 
 
 ## Scripts
 
-### `causal_inference_extension.R` — main analysis script
+### `part2_causal_inference.r` — main analysis script
 
 The main script runs the full staggered DiD pipeline in ten sequential sections. It fetches ACS covariates via `tidycensus` (Section 1), merges them onto the base panel (Section 2), estimates static TWFE models as a diagnostic foil (Section 3), runs a Goodman-Bacon decomposition to quantify the bias problem (Section 4), plots raw weighted mortality trends by cohort (Section 5), estimates Callaway & Sant'Anna `att_gt()` for seven outcome/specification combinations (Section 6), aggregates group-time ATTs and builds the main results table (Section 7), produces event-study figures (Section 8), runs HonestDiD sensitivity on the primary estimate (Section 9), and prints headline numbers (Section 10).
 
@@ -42,7 +42,7 @@ It requires `panel_state_year.csv` in the working directory and a Census API key
 
 The script uses several methods beyond the course syllabus, all tagged `[EXTENSION Ex]` inline: `tidycensus` for ACS data acquisition (E1), `fixest::feols` for fixed-effects regression (E2), `bacondecomp::bacon` for the Goodman-Bacon decomposition (E3), `did::att_gt` and `did::aggte` for the Callaway & Sant'Anna estimator (E4), and `HonestDiD` for parallel-trends sensitivity analysis (E5).
 
-### `merge_covariates.R` — deterministic merge step
+### `merge_covariates.r` — deterministic merge step
 
 A lighter standalone script that performs only the covariate merge, with no Census API call. It reads `panel_state_year.csv` and `census_acs_covariates.csv` from the working directory and writes `panel_with_covariates.csv`. It includes a partition guard that verifies the external-cause series in the base panel is the filtered version (V01–Y89 excluding Y60–Y69 and Y83–Y84), which are already counted inside the amenable series. Running this script is sufficient to reproduce the merged analysis panel without re-fetching ACS data.
 
@@ -72,7 +72,7 @@ The extension required significant additional time to correctly implement the Ca
 
 ## AI Disclosure
 
-This extension was developed primarily with AI assistance (Claude, Anthropic). The scripts, data pipeline design, and this documentation were drafted with AI support. All methodological decisions were reviewed by the research group, but given the incomplete state of the analysis, the output has not been fully validated. Disclosed per the course AI policy (Assignment, p. 2).
+This extension was developed primarily with AI assistance. The scripts, data pipeline design, and this documentation were drafted with AI support. All methodological decisions were reviewed by the research group, but given the incomplete state of the analysis, the output has not been fully validated. Disclosed per the course AI policy.
 
 ---
 
