@@ -6,6 +6,18 @@ The estimated association is small and unstable across specifications, and once 
 We argue that none of these estimates identifies a causal effect: omitted variables (population health, income, behaviour), reverse causality (sicker or poorer populations select differently into coverage), and the ecological fallacy all confound a state-level regression. <br>
 The contribution of this section is therefore diagnostic (it shows precisely why a purely observational design fails to recover the causal parameter of interest) and it motivates the quasi-experimental strategy of Part II, where randomization removes the confounding that no amount of OLS adjustment can.
 <br>
+
+# Structure
+ 
+```
+[01] Part_1/
+├── data_1/        # Raw CDC WONDER files and processed dataset
+├── scripts/       # Data pipeline and regression scripts
+└── README.md      # This file
+```
+ 
+For details on the data sources, variable definitions, and processing steps, see the README files inside each subfolder.
+
 ## Setup
 
 To ensure reproducibility, initialize the environment by loading the required libraries and setting up your federal API credentials:
