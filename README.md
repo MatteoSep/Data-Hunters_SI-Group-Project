@@ -13,8 +13,10 @@ Comparing observational (OLS, matching) with experimental (LATE) estimates on th
 The methodological lesson is that identification, not statistical adjustment, is what delivers credible causal estimates.
 
 
-
-
+# Structure
+This repository contains the final output within the folder `[00] Paper`. <br>
+It also provides additional information related to data retrieval and processing for both parts `[01] Part_1` and `[02] Part_2` <br>
+While working on part 2 
 
 # Disclaimer
 This repository was created for academic purposes as part of the Statistical Inference course project, Università di Roma La Sapienza.  
