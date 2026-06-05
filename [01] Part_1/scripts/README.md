@@ -4,7 +4,7 @@
 
 This script builds the final cross-sectional dataset used in Part I of the project. It combines three data sources — U.S. Census Bureau socioeconomic estimates, all-cause mortality data, and medical-cause mortality data — into a single cleaned dataset at the U.S. state level (N ≈ 51, including Washington D.C.) for the year 2019.
 
-The resulting dataset is saved to `data/data_1/processed/mio_dataset_output.csv` and serves as the input for all OLS regression models in the analysis.
+The resulting dataset is saved to `[01] Part_1/data_1/processed/mio_dataset_output.csv` and serves as the input for all OLS regression models in the analysis.
 
 ---
 
