@@ -1,4 +1,4 @@
-# Future Extension — ACA Medicaid Expansion and Mortality (Incomplete)
+# Future Extension
 
 > **This analysis was not completed.** The material in this folder represents preliminary work that was developed primarily with AI assistance and was not finished due to time and resource constraints. It does not form part of the graded submission and should be interpreted accordingly.
 
