@@ -17,7 +17,11 @@ The methodological lesson is that identification, not statistical adjustment, is
 This repository contains the final output within the folder `[00] Paper`. <br>
 It also provides additional information related to data retrieval and processing for both parts `[01] Part_1` and `[02] Part_2` <br>
 While working on part 2 
-
+### Future Extension — Callaway & Sant'Anna DiD (incomplete)
+While working on Part 2, we explored a complementary extension based on the Callaway & Sant'Anna (2021) Difference-in-Differences estimator, which handles heterogeneous treatment effects in staggered adoption designs. <br>
+The idea was to complement the OHIE RCT evidence, specific to Oregon in 2008, with a broader quasi-experimental analysis of the ACA Medicaid expansions starting in 2014, where states adopted the policy at different points in time. The Callaway & Sant'Anna estimator is methodologically appropriate for this setting because it accounts for treatment timing heterogeneity across cohorts and avoids the negative-weighting problem of standard two-way fixed effects DiD. <br>
+Due to time and resource constraints, this analysis was not completed and is not part of the submitted paper. The folder `[03] future extension part_2` contains the data assembled and the preliminary notes outlining the intended design. <br>
+This material is included for transparency only and does not form part of the graded submission.
 # Disclaimer
 This repository was created for academic purposes as part of the Statistical Inference course project, Università di Roma La Sapienza.  
 All data sources belong to their respective owners, including the U.S. Census Bureau and CDC WONDER.
