@@ -1,4 +1,4 @@
-# Part II: Experimental Data — Oregon Health Insurance Experiment (OHIE)
+# Part 2:  Data Oregon Health Insurance Experiment 
 
 This directory contains the replication datasets from the **Oregon Health Insurance Experiment (OHIE)**, a landmark randomized controlled trial (RCT) in health economics. The study leverages a 2008 lottery system to evaluate the causal impact of expanding Medicaid coverage to low-income, uninsured adults.
 
