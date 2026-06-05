@@ -1,5 +1,4 @@
-# Part II – Causal Inference: Oregon Health Insurance Experiment
-# `ohie_analysis.R` — Part II: Oregon Health Insurance Experiment
+# Part 2 – Causal Inference: Oregon Health Insurance Experiment
 
 This script replicates the core empirical analysis of Finkelstein et al. (2012,
 *Quarterly Journal of Economics*) using the Oregon Health Insurance Experiment
